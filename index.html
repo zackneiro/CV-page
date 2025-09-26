@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Etunimi Sukunimi — CV-sivusto</title>
+  <meta name="description" content="Osaaminen, projektit ja yhteystiedot. Rakennan modernia ja saavutettavaa verkkoa." />
+  <meta property="og:title" content="Etunimi Sukunimi — CV-sivusto" />
+  <meta property="og:description" content="Osaaminen, projektit ja yhteystiedot. Rakennan modernia ja saavutettavaa verkkoa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/social-og-1200x630.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+</head>
+
+  <body>
+  <a class="skip" href="#content">Siirry sisältöön</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand"><a href="/">[Nimi]</a></div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" onclick="toggleMenu()">☰</button>
+      <nav id="site-nav" class="nav">
+        <a href="/"  aria-current="page">Etusivu</a>
+        <a href="/cv/" >CV</a>
+        <a href="/projektit/" >Projektit</a>
+        <a href="/kokemus/" >Kokemus</a>
+        <a href="/yhteystiedot/" >Yhteys</a>
+      </nav>
+      <button class="theme-btn" onclick="toggleTheme()" title="Vaihda teema">🌓</button>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Etunimi Sukunimi — Front‑end‑kehittäjä</h1>
+        <p class="ingress">Rakennan suorituskykyisiä ja saavutettavia web-sovelluksia, joissa design tukee liiketoiminnan mittareita.</p>
+        <div class="cta">
+          <a class="btn primary" href="/cv/">Katso CV</a>
+          <a class="btn" href="/projektit/">Projektit</a>
+          <a class="btn ghost" href="/yhteystiedot/">Ota yhteyttä</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="/assets/images/hero-portrait-1000x1000.svg" alt="Etunimi Sukunimi, profiilikuva" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Osaamisnostot</h2>
+      <ul class="pill-list">
+        <li>Suorituskyky: TTI −45 %, CLS ~0</li>
+        <li>Saavutettavuus: WCAG 2.2 AA</li>
+        <li>Design systemit & komponenttikirjastot</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projektinostot</h2>
+      <div class="grid cards">
+        <article class="card">
+          <img src="/assets/images/project-featured-1600x900.svg" alt="Reaaliaikaisen chat-sovelluksen näkymä">
+          <h3>Reaaliaikainen chat</h3>
+          <p>Optimistinen UI, WebSocket. Lighthouse 98–100.</p>
+          <p><a href="/projektit/#chat" class="btn">Lue lisää</a></p>
+        </article>
+        <article class="card">
+          <img src="/assets/images/project-dashboard-1600x900.svg" alt="KPI-dashboard mittareineen">
+          <h3>KPI‑dashboard</h3>
+          <p>Renderöinti 200 ms. Konversio +12 %.</p>
+          <p><a href="/projektit/#dashboard" class="btn">Lue lisää</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>Päivitetty: 2025-09-26 — © <span id="year"></span> [Nimi]. 
+      <a href="/sitemap.xml">Sitemap</a> · <a href="/cv.pdf">PDF-CV</a></small>
+    </div>
+  </footer>
+  <script src="/assets/main.js"></script>
+  </body>
+</html>

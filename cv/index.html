@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Etunimi Sukunimi</title>
+  <meta name="description" content="Työkokemus, koulutus, sertifikaatit ja kielet. Lataa PDF-CV." />
+  <meta property="og:title" content="CV — Etunimi Sukunimi" />
+  <meta property="og:description" content="Työkokemus, koulutus, sertifikaatit ja kielet. Lataa PDF-CV." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/social-og-1200x630.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+</head>
+
+  <body>
+  <a class="skip" href="#content">Siirry sisältöön</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand"><a href="/">[Nimi]</a></div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" onclick="toggleMenu()">☰</button>
+      <nav id="site-nav" class="nav">
+        <a href="/" >Etusivu</a>
+        <a href="/cv/"  aria-current="page">CV</a>
+        <a href="/projektit/" >Projektit</a>
+        <a href="/kokemus/" >Kokemus</a>
+        <a href="/yhteystiedot/" >Yhteys</a>
+      </nav>
+      <button class="theme-btn" onclick="toggleTheme()" title="Vaihda teema">🌓</button>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+  <h1>CV</h1>
+  <div class="cv-layout">
+    <aside class="cv-aside">
+      <h2>Osaaminen</h2>
+      <ul>
+        <li>Web (HTML/CSS/ARIA)</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React (Hooks, tilanhallinta)</li>
+        <li>Node.js / REST / SQL</li>
+      </ul>
+      <h2>Kielet</h2>
+      <ul>
+        <li>Suomi — C1</li>
+        <li>Englanti — C1</li>
+        <li>Venäjä — C2</li>
+      </ul>
+    </aside>
+    <section class="cv-main">
+      <h2>Työkokemus</h2>
+      <article class="job">
+        <h3>Front‑end kehittäjä — Yritys Oy</h3>
+        <small>08/2022 – 09/2025 · Helsinki</small>
+        <ul>
+          <li>UI‑uudistus (Design System) → kehitysaika −30 %, AA‑taso.</li>
+          <li>Suorituskyky: TTI −45 %.</li>
+          <li>Yhteistyö tuote- ja data-tiimien kanssa (A/B).</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3>Junior‑kehittäjä — Startuppi Oy</h3>
+        <small>06/2020 – 07/2022 · Etä</small>
+        <ul>
+          <li>React‑komponentit ja lomakevirrat.</li>
+          <li>E2E‑testit (Playwright) ja CI.</li>
+        </ul>
+      </article>
+
+      <h2>Koulutus</h2>
+      <p>Bachelor of Engineering, Tietotekniikka — AMK (2019–2023)</p>
+
+      <p class="pdf">
+        <a class="btn primary" id="pdfLink" href="/cv.pdf">Lataa PDF‑CV</a>
+        <span class="muted" id="pdfNote" aria-live="polite"></span>
+      </p>
+    </section>
+  </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>Päivitetty: 2025-09-26 — © <span id="year"></span> [Nimi]. 
+      <a href="/sitemap.xml">Sitemap</a> · <a href="/cv.pdf">PDF-CV</a></small>
+    </div>
+  </footer>
+  <script src="/assets/main.js"></script>
+  </body>
+</html>
