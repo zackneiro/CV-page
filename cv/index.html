@@ -17,90 +17,105 @@
   <meta name="color-scheme" content="light dark" />
 </head>
 
-  <body>
+<body>
   <a class="skip" href="#content">Siirry sisältöön</a>
   <header class="site-header">
     <div class="wrap">
       <div class="brand"><a href="/">Zakhar Adeev</a></div>
       <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" onclick="toggleMenu()">☰</button>
       <nav id="site-nav" class="nav">
-        <a href="/" >Etusivu</a>
-        <a href="/cv/"  aria-current="page">CV</a>
-        <a href="/projektit/" >Projektit</a>
-        <a href="/kokemus/" >Kokemus</a>
-        <a href="/yhteystiedot/" >Yhteys</a>
+        <a href="/">Etusivu</a>
+        <a href="/cv/" aria-current="page">CV</a>
+        <a href="/projektit/">Projektit</a>
+        <a href="/kokemus/">Kokemus</a>
+        <a href="/yhteystiedot/">Yhteys</a>
       </nav>
       <button class="theme-btn" onclick="toggleTheme()" title="Vaihda teema">🌓</button>
     </div>
   </header>
+
   <main id="content" class="wrap">
+    <h1>CV</h1>
 
-  <h1>CV</h1>
-  <div class="cv-layout">
-    <aside class="cv-aside">
-      <h2>Osaaminen</h2>
-      <ul>
-        <li>C</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Word, Excel</li>
-      </ul>
-      <h2>Kielet</h2>
-      <ul>
-        <li>Suomi — B2</li>
-        <li>Englanti — B2</li>
-        <li>Venäjä — Äidinkieli</li>
-      </ul>
-      <h2>Soft-tasot</h2>
-      <ul>
-        <li>Team player</li>
-        <li>Communication</li>
-        <li>Critical thinking</li>
-        <li>Adaptability</li>
-        <li>Time management</li>
-       <li>Flexibility</li>
-        <li>Patience</li>
-      </ul>
-    </aside>
-    <section class="cv-main">
-      <h2>Työkokemus</h2>
-      <article class="job">
-        <h3>Kokki — WE ARE GROUP</h3>
-        <small>3/2021 – 10/2023 · Helsinki</small>
+    <div class="cv-layout">
+      <aside class="cv-aside">
+        <h2>Osaaminen</h2>
         <ul>
-          <li>Efficient food service</li>
-          <li>Team work under pressure</li>
-          <li>Customer service</li>
+          <li>C (perusteet)</li>
+          <li>Python (perusteet)</li>
+          <li>SQL (perusteet)</li>
+          <li>Excel / Word (taulukot, pivotit, asiakirjat)</li>
         </ul>
-      </article>
-      <article class="job">
-        <h3>Kokki - Palapizzeria IZZA</h3>
-        <small>10/2023 – 06/2024 · Helsinki</small>
+
+        <h2>Kielet</h2>
         <ul>
-          <li>Pizza making and csutomer service</li>
-          <li>Work under pressure every day</li>
-          <li>Finding problems solutions during rush</li>
+          <li>Suomi — B2</li>
+          <li>Englanti — B2</li>
+          <li>Venäjä — äidinkieli</li>
         </ul>
-      </article>
 
-      <h2>Koulutus</h2>
-      <p>Riveria ammattikoulu 2019-2022</p>
-      <p>Ravintola- ja catering-alan perustutkinto 180 osp.</p>
+        <h2>Työelämätaidot</h2>
+        <ul>
+          <li>Tiimityö ja viestintä</li>
+          <li>Kriittinen ajattelu ja ongelmanratkaisu</li>
+          <li>Sopeutumiskyky ja ajanhallinta</li>
+          <li>Joustavuus ja paineensietokyky</li>
+          <li>Kärsivällisyys ja palveluhenkisyys</li>
+        </ul>
+      </aside>
 
-      <p class="pdf">
-        <a class="btn primary" id="pdfLink" href="/cv.pdf">Lataa PDF‑CV</a>
-        <span class="muted" id="pdfNote" aria-live="polite"></span>
-      </p>
-    </section>
-  </div>
+      <section class="cv-main">
+        <h2>Työkokemus</h2>
 
+        <article class="job">
+          <h3>Keittiötyöntekijä (vuokratyö) — JobNord</h3>
+          <small>06/2024 – nykyinen · Helsinki & Vantaa</small>
+          <ul>
+            <li>Puotilan kartano: työ keittiössä arjen ruuhkissa ja asiakasvirran keskellä.</li>
+            <li>Suunnittelin ja priorisoin työtehtäväni itsenäisesti; sovitin tekemisen tiimin rytmiin.</li>
+            <li>St. George -hotelli (5 tähteä): aamiaisvuorot, laadun varmistus.</li>
+            <li>Nopea ongelmanratkaisu ja yhteistyö salin ja keittiön välillä.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Kokki / keittiötyöntekijä — WE ARE GROUP</h3>
+          <small>03/2021 – 10/2023 · Helsinki</small>
+          <ul>
+            <li>Tehokas ruokatuotanto ja linjatyö kiireisissä vuoroissa.</li>
+            <li>Tiimityö ja selkeä kommunikointi paineen alla.</li>
+            <li>Asiakaspalvelu ja hygieeniset työskentelytavat.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Kokki — Palapizzeria IZZA</h3>
+          <small>10/2023 – 06/2024 · Helsinki</small>
+          <ul>
+            <li>Pizzojen valmistus ja asiakaspalvelu.</li>
+            <li>Päivittäinen työskentely ruuhka-aikoina.</li>
+            <li>Ongelmanratkaisu ja priorisointi kiiretilanteissa.</li>
+          </ul>
+        </article>
+
+        <h2>Koulutus</h2>
+        <p>Riveria, 2019–2022 — Ravintola- ja catering-alan perustutkinto (180 osp).</p>
+        <p>AAB453 IT-tradenomin polkuopinnot, ryhmä A ajoitus: 18.08.2025 - 12.12.2025</p>
+
+        <p class="pdf">
+          <a class="btn primary" id="pdfLink" href="/cv.pdf">Lataa PDF-CV</a>
+          <span class="muted" id="pdfNote" aria-live="polite"></span>
+        </p>
+      </section>
+    </div>
   </main>
+
   <footer class="site-footer">
     <div class="wrap">
-      <small>Päivitetty: 2025-09-26 — © <span id="year"></span> Zakhar Adeev. 
+      <small>Päivitetty: 2025-09-26 — © <span id="year"></span> Zakhar Adeev.
       <a href="/sitemap.xml">Sitemap</a> · <a href="/cv.pdf">PDF-CV</a></small>
     </div>
   </footer>
   <script src="/assets/main.js"></script>
-  </body>
+</body>
 </html>
