@@ -42,3 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const nav = document.getElementById('site-nav');
+    const btn = document.querySelector('.menu-btn');
+    if (nav && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (btn) btn.focus();
+    }
+  }
+});
