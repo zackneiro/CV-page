@@ -1,12 +1,38 @@
 
 // Teeman vaihto
 (function(){
-  const saved = localStorage.getItem('theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  if(saved === 'light' || (!saved && prefersLight)){
-    document.documentElement.setAttribute('data-theme', 'light');
+  const doc = document.documentElement;
+  const btn = document.getElementById('themeToggle');
+  function setTheme(mode){
+    if(mode === 'light'){
+      doc.setAttribute('data-theme','light');                
+      localStorage.setItem('theme','light');
+      if(btn){ btn.setAttribute('aria-pressed', 'false'); btn.title = 'Vaihda teemaan: tumma'; }
+    }else{
+      // dark-värit ovat oletuksena :rootissa -> poistetaan light
+      doc.removeAttribute('data-theme');
+      localStorage.setItem('theme','dark');
+      if(btn){ btn.setAttribute('aria-pressed', 'true'); btn.title = 'Vaihda teemaan: vaalea'; }
+    }
   }
+
+   document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'j') {
+      e.preventDefault();
+      window.toggleTheme();
+    }
+  });
 })();
+
+  const stored = localStorage.getItem('theme'); // 'light' | 'dark' | null
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  setTheme(stored ? stored : (prefersLight ? 'light' : 'dark'));
+
+  window.toggleTheme = function(){
+    const isLight = doc.getAttribute('data-theme') === 'light';
+    setTheme(isLight ? 'dark' : 'light');
+  };
+
 function toggleTheme(){
   const cur = document.documentElement.getAttribute('data-theme');
   const next = cur === 'light' ? '' : 'light';

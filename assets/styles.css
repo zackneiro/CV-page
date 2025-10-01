@@ -136,3 +136,11 @@ button.btn{ min-height: 44px; }
 }
 
 img{ max-width:100%; height:auto; }
+
+@media (prefers-reduced-motion: no-preference){
+  html, body, .card, .site-header, .site-footer { transition: background-color .25s, color .25s, border-color .25s; }
+}
+
+.theme-btn[aria-pressed="true"]{ border-color: var(--primary); box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary), transparent 80%); }
+
+:root { color-scheme: dark light; }
