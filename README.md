@@ -1,4 +1,4 @@
-## Hei, tämä on CV-sivuni tiedosto. Tältä löydät tietoa sen rakenteesta.
+## Hei! Tämä on CV-sivuni tiedosto. Tältä löydät tietoa sen rakenteesta.
 
 ## Rakenne
 - `/` Etusivu
