@@ -8,12 +8,12 @@
   <meta property="og:title" content="Yhteystiedot — Zakhar Adeev" />
   <meta property="og:description" content="Ota yhteyttä: sähköposti, LinkedIn, GitHub, puhelin." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/social-og-1200x630.png" />
+  <meta property="og:image" content="../assets/images/social-og-1200x630.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css" />
   <meta name="color-scheme" content="light dark" />
 </head>
 
@@ -21,7 +21,9 @@
   <a class="skip" href="#content">Siirry sisältöön</a>
   <header class="site-header">
     <div class="wrap">
-      <div class="brand"><a href="/">Zakhar Adeev</a></div>
+      <div class="brand"><a href="../">Zakhar Adeev</a></div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko" onclick="toggleMenu()">☰</button>
+
       <nav id="site-nav" class="nav" aria-label="Päänavigaatio">
         <a href="../">Etusivu</a>
         <a href="../cv/">CV</a>
@@ -31,12 +33,11 @@
       </nav>
 
       <button id="themeToggle" class="theme-btn" type="button"
-        aria-pressed="false" aria-label="Vaihda teema (valo/tumma)"
-        onclick="toggleTheme()">🌓</button>
+              aria-pressed="false" aria-label="Vaihda teema (valo/tumma)"
+              onclick="toggleTheme()">🌓</button>
     </div>
   </header>
   <main id="content" class="wrap">
-
   <h1>Yhteystiedot</h1>
   <ul class="contact-list">
     <li>📧 <a href="mailto:zackneiro@gmail.com">zackneiro@gmail.com</a></li>
@@ -56,8 +57,10 @@
     <div class="wrap">
       <small>Päivitetty: 2025-09-26 — © <span id="year"></span> Zakhar Adeev. 
       <a href="/sitemap.xml">Sitemap</a>
+      </small>
     </div>
   </footer>
-  <script src="assets/main.js"></script>
+
+  <script src="../assets/main.js"></script>
   </body>
 </html>
