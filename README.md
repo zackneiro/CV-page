@@ -5,6 +5,6 @@
 - `/cv/` CV
 - `/projektit/` Projektit
 - `/yhteystiedot/` Yhteys
-- `/kokemus/` Case-tarinat (valinnainen)
+- `/kokemus/` Case-tarinat
 - `assets/` tyylit, skriptit, kuvat
 - `sitemap.xml`, `robots.txt`
