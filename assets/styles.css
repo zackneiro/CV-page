@@ -36,8 +36,10 @@ body{
 .nav{display:flex;gap:12px;margin-left:auto}
 .nav a{display:inline-block;padding:8px 12px;border-radius:999px;color:var(--text);text-decoration:none;border:1px solid transparent}
 .nav a[aria-current="page"]{border-color:var(--border); background:var(--chip)}
-.menu-btn,.theme-btn{background:none;border:1px solid var(--border);color:var(--text);border-radius:10px;padding:8px 10px;cursor:pointer}
+.-btn-btn,.theme-btn{background:none;border:1px solid var(--border);color:var(--text);border-radius:10px;padding:8px 10px;cursor:pointer}
 .theme-btn{margin-left:8px}
+.menu-btn{display: none;}
+
 @media (max-width: 720px){
   .menu-btn{display:inline-flex;align-items:center;justify-content: center; min-width:44px; min-height:44px }
   .nav{position:absolute;left:0;right:0;top:64px;background:var(--surface);padding:10px;display:none;flex-direction:column;border-bottom:1px solid var(--border); z-index: 10}
